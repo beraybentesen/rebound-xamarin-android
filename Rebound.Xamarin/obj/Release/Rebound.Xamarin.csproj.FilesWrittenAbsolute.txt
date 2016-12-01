@@ -1,0 +1,6 @@
+/Users/user/Projects/Rebound.Xamarin/Rebound.Xamarin/obj/Release/MonoAndroid,Version=v7.0.AssemblyAttribute.cs
+/Users/user/Projects/Rebound.Xamarin/Rebound.Xamarin/obj/Release/Rebound.Xamarin.Jars.rebound-0.3.8.jar
+/Users/user/Projects/Rebound.Xamarin/Rebound.Xamarin/bin/Release/Rebound.Xamarin.dll.mdb
+/Users/user/Projects/Rebound.Xamarin/Rebound.Xamarin/bin/Release/Rebound.Xamarin.dll
+/Users/user/Projects/Rebound.Xamarin/Rebound.Xamarin/obj/Release/Rebound.Xamarin.dll
+/Users/user/Projects/Rebound.Xamarin/Rebound.Xamarin/obj/Release/Rebound.Xamarin.dll.mdb

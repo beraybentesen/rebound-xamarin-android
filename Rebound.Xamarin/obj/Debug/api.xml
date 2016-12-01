@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<api>
+<package name="com.facebook.rebound">
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="AndroidSpringLooperFactory" static="false" visibility="">
+<method abstract="false" deprecated="not deprecated" final="false" name="createSpringLooper" native="false" return="com.facebook.rebound.SpringLooper" static="true" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="com.facebook.rebound.SpringLooper" extends-generic-aware="com.facebook.rebound.SpringLooper" final="false" name="AndroidSpringLooperFactory.ChoreographerAndroidSpringLooper" static="true" visibility="">
+<constructor deprecated="not deprecated" final="false" name="AndroidSpringLooperFactory.ChoreographerAndroidSpringLooper" static="false" type="com.facebook.rebound.AndroidSpringLooperFactory.ChoreographerAndroidSpringLooper" visibility="public">
+<parameter name="p0" type="android.view.Choreographer">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="start" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="stop" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="AndroidSpringLooperFactory.ChoreographerAndroidSpringLooper.1" static="false" visibility="">
+<implements name="android.view.Choreographer.FrameCallback" name-generic-aware="android.view.Choreographer.FrameCallback">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="doFrame" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="com.facebook.rebound.SpringLooper" extends-generic-aware="com.facebook.rebound.SpringLooper" final="false" name="AndroidSpringLooperFactory.LegacyAndroidSpringLooper" static="true" visibility="">
+<constructor deprecated="not deprecated" final="false" name="AndroidSpringLooperFactory.LegacyAndroidSpringLooper" static="false" type="com.facebook.rebound.AndroidSpringLooperFactory.LegacyAndroidSpringLooper" visibility="public">
+<parameter name="p0" type="android.os.Handler">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="create" native="false" return="com.facebook.rebound.SpringLooper" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="start" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="stop" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="AndroidSpringLooperFactory.LegacyAndroidSpringLooper.1" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="AnimationQueue" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AnimationQueue" static="false" type="com.facebook.rebound.AnimationQueue" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="addAllValues" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.util.Collection&lt;java.lang.Double&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="addCallback" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.facebook.rebound.AnimationQueue.Callback">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="addValue" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.Double">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="clearCallbacks" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="clearValues" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeCallback" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.facebook.rebound.AnimationQueue.Callback">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="com.facebook.rebound.ChoreographerCompat.FrameCallback" extends-generic-aware="com.facebook.rebound.ChoreographerCompat.FrameCallback" final="false" name="AnimationQueue.1" static="false" visibility="">
+<method abstract="false" deprecated="not deprecated" final="false" name="doFrame" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="AnimationQueue.Callback" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onFrame" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.Double">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="BaseSpringSystem" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="BaseSpringSystem" static="false" type="com.facebook.rebound.BaseSpringSystem" visibility="public">
+<parameter name="p0" type="com.facebook.rebound.SpringLooper">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="addListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.facebook.rebound.SpringSystemListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createSpring" native="false" return="com.facebook.rebound.Spring" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAllSprings" native="false" return="java.util.List&lt;com.facebook.rebound.Spring&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getIsIdle" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSpringById" native="false" return="com.facebook.rebound.Spring" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="loop" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="double">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeAllListeners" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.facebook.rebound.SpringSystemListener">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="BouncyConversion" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="BouncyConversion" static="false" type="com.facebook.rebound.BouncyConversion" visibility="public">
+<parameter name="p0" type="double">
+</parameter>
+<parameter name="p1" type="double">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBounciness" native="false" return="double" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBouncyFriction" native="false" return="double" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBouncyTension" native="false" return="double" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSpeed" native="false" return="double" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="BuildConfig" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="BuildConfig" static="false" type="com.facebook.rebound.BuildConfig" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="true" name="APPLICATION_ID" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;com.facebook.rebound&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="BUILD_TYPE" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;release&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DEBUG" static="true" transient="false" type="boolean" type-generic-aware="boolean" value="false" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FLAVOR" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VERSION_CODE" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VERSION_NAME" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="ChoreographerCompat" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="com.facebook.rebound.ChoreographerCompat" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="postFrameCallback" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.facebook.rebound.ChoreographerCompat.FrameCallback">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="postFrameCallbackDelayed" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.facebook.rebound.ChoreographerCompat.FrameCallback">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeFrameCallback" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.facebook.rebound.ChoreographerCompat.FrameCallback">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="ChoreographerCompat.FrameCallback" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ChoreographerCompat.FrameCallback" static="false" type="com.facebook.rebound.ChoreographerCompat.FrameCallback" visibility="public">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="doFrame" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="ChoreographerCompat.FrameCallback.1" static="false" visibility="">
+<implements name="android.view.Choreographer.FrameCallback" name-generic-aware="android.view.Choreographer.FrameCallback">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="doFrame" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="ChoreographerCompat.FrameCallback.2" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="OrigamiValueConverter" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="OrigamiValueConverter" static="false" type="com.facebook.rebound.OrigamiValueConverter" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="frictionFromOrigamiValue" native="false" return="double" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="double">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="origamiValueFromFriction" native="false" return="double" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="double">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="origamiValueFromTension" native="false" return="double" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="double">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="tensionFromOrigamiValue" native="false" return="double" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="double">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="SimpleSpringListener" static="false" visibility="public">
+<implements name="com.facebook.rebound.SpringListener" name-generic-aware="com.facebook.rebound.SpringListener">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="SimpleSpringListener" static="false" type="com.facebook.rebound.SimpleSpringListener" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="onSpringActivate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.facebook.rebound.Spring">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onSpringAtRest" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.facebook.rebound.Spring">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onSpringEndStateChange" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.facebook.rebound.Spring">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onSpringUpdate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.facebook.rebound.Spring">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Spring" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="addListener" native="false" return="com.facebook.rebound.Spring" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.facebook.rebound.SpringListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="currentValueIsApproximately" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="double">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="destroy" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCurrentDisplacementDistance" native="false" return="double" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCurrentValue" native="false" return="double" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getEndValue" native="false" return="double" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getId" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRestDisplacementThreshold" native="false" return="double" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRestSpeedThreshold" native="false" return="double" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSpringConfig" native="false" return="com.facebook.rebound.SpringConfig" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getStartValue" native="false" return="double" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getVelocity" native="false" return="double" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isAtRest" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isOvershootClampingEnabled" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isOvershooting" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeAllListeners" native="false" return="com.facebook.rebound.Spring" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeListener" native="false" return="com.facebook.rebound.Spring" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.facebook.rebound.SpringListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAtRest" native="false" return="com.facebook.rebound.Spring" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCurrentValue" native="false" return="com.facebook.rebound.Spring" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="double">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCurrentValue" native="false" return="com.facebook.rebound.Spring" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="double">
+</parameter>
+<parameter name="p1" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setEndValue" native="false" return="com.facebook.rebound.Spring" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="double">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOvershootClampingEnabled" native="false" return="com.facebook.rebound.Spring" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setRestDisplacementThreshold" native="false" return="com.facebook.rebound.Spring" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="double">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setRestSpeedThreshold" native="false" return="com.facebook.rebound.Spring" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="double">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSpringConfig" native="false" return="com.facebook.rebound.Spring" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.facebook.rebound.SpringConfig">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setVelocity" native="false" return="com.facebook.rebound.Spring" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="double">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="systemShouldAdvance" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="wasAtRest" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Spring.1" static="true" visibility=""/>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Spring.PhysicsState" static="true" visibility=""/>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="SpringChain" static="false" visibility="public">
+<implements name="com.facebook.rebound.SpringListener" name-generic-aware="com.facebook.rebound.SpringListener">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="addSpring" native="false" return="com.facebook.rebound.SpringChain" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.facebook.rebound.SpringListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="create" native="false" return="com.facebook.rebound.SpringChain" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="create" native="false" return="com.facebook.rebound.SpringChain" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAllSprings" native="false" return="java.util.List&lt;com.facebook.rebound.Spring&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAttachmentSpringConfig" native="false" return="com.facebook.rebound.SpringConfig" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getControlSpring" native="false" return="com.facebook.rebound.Spring" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMainSpringConfig" native="false" return="com.facebook.rebound.SpringConfig" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onSpringActivate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.facebook.rebound.Spring">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onSpringAtRest" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.facebook.rebound.Spring">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onSpringEndStateChange" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.facebook.rebound.Spring">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onSpringUpdate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.facebook.rebound.Spring">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setControlSpringIndex" native="false" return="com.facebook.rebound.SpringChain" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="SpringConfig" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SpringConfig" static="false" type="com.facebook.rebound.SpringConfig" visibility="public">
+<parameter name="p0" type="double">
+</parameter>
+<parameter name="p1" type="double">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="fromBouncinessAndSpeed" native="false" return="com.facebook.rebound.SpringConfig" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="double">
+</parameter>
+<parameter name="p1" type="double">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="fromOrigamiTensionAndFriction" native="false" return="com.facebook.rebound.SpringConfig" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="double">
+</parameter>
+<parameter name="p1" type="double">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="false" name="defaultConfig" static="true" transient="false" type="com.facebook.rebound.SpringConfig" type-generic-aware="com.facebook.rebound.SpringConfig" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="friction" static="false" transient="false" type="double" type-generic-aware="double" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="tension" static="false" transient="false" type="double" type-generic-aware="double" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="SpringConfigRegistry" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="addSpringConfig" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.facebook.rebound.SpringConfig">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAllSpringConfig" native="false" return="java.util.Map&lt;com.facebook.rebound.SpringConfig, java.lang.String&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="com.facebook.rebound.SpringConfigRegistry" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeAllSpringConfig" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeSpringConfig" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.facebook.rebound.SpringConfig">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="SpringListener" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onSpringActivate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.facebook.rebound.Spring">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onSpringAtRest" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.facebook.rebound.Spring">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onSpringEndStateChange" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.facebook.rebound.Spring">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onSpringUpdate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.facebook.rebound.Spring">
+</parameter>
+</method>
+</interface>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="SpringLooper" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SpringLooper" static="false" type="com.facebook.rebound.SpringLooper" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSpringSystem" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.facebook.rebound.BaseSpringSystem">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="start" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="stop" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="false" name="mSpringSystem" static="false" transient="false" type="com.facebook.rebound.BaseSpringSystem" type-generic-aware="com.facebook.rebound.BaseSpringSystem" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="com.facebook.rebound.BaseSpringSystem" extends-generic-aware="com.facebook.rebound.BaseSpringSystem" final="false" name="SpringSystem" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="create" native="false" return="com.facebook.rebound.SpringSystem" static="true" synchronized="false" visibility="public">
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="SpringSystemListener" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onAfterIntegrate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.facebook.rebound.BaseSpringSystem">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onBeforeIntegrate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.facebook.rebound.BaseSpringSystem">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="SpringUtil" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SpringUtil" static="false" type="com.facebook.rebound.SpringUtil" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="clamp" native="false" return="double" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="double">
+</parameter>
+<parameter name="p1" type="double">
+</parameter>
+<parameter name="p2" type="double">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="mapValueFromRangeToRange" native="false" return="double" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="double">
+</parameter>
+<parameter name="p1" type="double">
+</parameter>
+<parameter name="p2" type="double">
+</parameter>
+<parameter name="p3" type="double">
+</parameter>
+<parameter name="p4" type="double">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="com.facebook.rebound.SpringLooper" extends-generic-aware="com.facebook.rebound.SpringLooper" final="false" name="SteppingLooper" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SteppingLooper" static="false" type="com.facebook.rebound.SteppingLooper" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="start" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="step" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="stop" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="com.facebook.rebound.SpringLooper" extends-generic-aware="com.facebook.rebound.SpringLooper" final="false" name="SynchronousLooper" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SynchronousLooper" static="false" type="com.facebook.rebound.SynchronousLooper" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTimeStep" native="false" return="double" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setTimeStep" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="double">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="start" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="stop" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="false" name="SIXTY_FPS" static="true" transient="false" type="double" type-generic-aware="double" visibility="public" volatile="false">
+</field>
+</class>
+</package>
+<package name="com.facebook.rebound.ui">
+<class abstract="false" deprecated="not deprecated" extends="android.widget.FrameLayout" extends-generic-aware="android.widget.FrameLayout" final="false" name="SpringConfiguratorView" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SpringConfiguratorView" static="false" type="com.facebook.rebound.ui.SpringConfiguratorView" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="android.util.AttributeSet">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="SpringConfiguratorView" static="false" type="com.facebook.rebound.ui.SpringConfiguratorView" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="SpringConfiguratorView" static="false" type="com.facebook.rebound.ui.SpringConfiguratorView" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="destroy" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="refreshSpringConfigurations" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="SpringConfiguratorView.1" static="true" visibility=""/>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="SpringConfiguratorView.OnNubTouchListener" static="false" visibility="">
+<implements name="android.view.View.OnTouchListener" name-generic-aware="android.view.View.OnTouchListener">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="onTouch" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+<parameter name="p1" type="android.view.MotionEvent">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="SpringConfiguratorView.RevealerSpringListener" static="false" visibility="">
+<implements name="com.facebook.rebound.SpringListener" name-generic-aware="com.facebook.rebound.SpringListener">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="onSpringActivate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.facebook.rebound.Spring">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onSpringAtRest" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.facebook.rebound.Spring">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onSpringEndStateChange" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.facebook.rebound.Spring">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onSpringUpdate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.facebook.rebound.Spring">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="SpringConfiguratorView.SeekbarListener" static="false" visibility="">
+<implements name="android.widget.SeekBar.OnSeekBarChangeListener" name-generic-aware="android.widget.SeekBar.OnSeekBarChangeListener">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="onProgressChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.widget.SeekBar">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onStartTrackingTouch" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.widget.SeekBar">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onStopTrackingTouch" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.widget.SeekBar">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.widget.BaseAdapter" extends-generic-aware="android.widget.BaseAdapter" final="false" name="SpringConfiguratorView.SpinnerAdapter" static="false" visibility="">
+<constructor deprecated="not deprecated" final="false" name="SpringConfiguratorView.SpinnerAdapter" static="false" type="com.facebook.rebound.ui.SpringConfiguratorView.SpinnerAdapter" visibility="public">
+<parameter name="p1" type="android.content.Context">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="add" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="clear" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getItem" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getItemId" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getView" native="false" return="android.view.View" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="android.view.View">
+</parameter>
+<parameter name="p2" type="android.view.ViewGroup">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="SpringConfiguratorView.SpringSelectedListener" static="false" visibility="">
+<implements name="android.widget.AdapterView.OnItemSelectedListener" name-generic-aware="android.widget.AdapterView.OnItemSelectedListener">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="onItemSelected" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.widget.AdapterView&lt;?&gt;">
+</parameter>
+<parameter name="p1" type="android.view.View">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onNothingSelected" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.widget.AdapterView&lt;?&gt;">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Util" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Util" static="false" type="com.facebook.rebound.ui.Util" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="createLayoutParams" native="false" return="android.widget.FrameLayout.LayoutParams" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="createMatchParams" native="false" return="android.widget.FrameLayout.LayoutParams" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="createMatchWrapParams" native="false" return="android.widget.FrameLayout.LayoutParams" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="createWrapMatchParams" native="false" return="android.widget.FrameLayout.LayoutParams" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="createWrapParams" native="false" return="android.widget.FrameLayout.LayoutParams" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="dpToPx" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="android.content.res.Resources">
+</parameter>
+</method>
+</class>
+</package>
+</api>
